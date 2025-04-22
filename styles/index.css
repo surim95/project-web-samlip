@@ -12,3 +12,25 @@
 #wrap header .right_wrap li {}
 #wrap header .right_wrap li a {}
 #wrap header .right_wrap li a img {}
+/* ===========================================================footer */
+#wrap footer {}
+#wrap footer .top_wrap {}
+#wrap footer .top_wrap .fnb {}
+#wrap footer .top_wrap .fnb a {}
+#wrap footer .top_wrap .fnb a:first-child {}
+#wrap footer .top_wrap .fnb a:nth-child(2) {}
+#wrap footer .top_wrap .fnb a:last-child {}
+#wrap footer .top_wrap .fnb a img {}
+#wrap footer .top_wrap .right_wrap {}
+/* ==========================================================footer 패밀리사이트+사이트맵 공통 */
+#wrap footer .top_wrap .right_wrap .site {}
+/* ==========================================================footer 패밀리사이트+사이트맵 개별 */
+#wrap footer .top_wrap .right_wrap select {}
+#wrap footer .top_wrap .right_wrap select option {}
+#wrap footer .top_wrap .right_wrap .site_map {}
+#wrap footer .top_wrap .right_wrap .site_map span {}
+#wrap footer .top_wrap .right_wrap .site_map span img {}
+#wrap footer .bottom_wrap {}
+#wrap footer .bottom_wrap address {}
+#wrap footer .bottom_wrap address em {}
+#wrap footer .bottom_wrap p {}

@@ -40,10 +40,7 @@
     font-weight: 600;
     letter-spacing: -0.02rem;
 }
-#wrap footer .top_wrap .fnb a:last-child {
-    width: 60px; height: 60px;
-    display: block;
-}
+#wrap footer .top_wrap .fnb a:last-child {}
 #wrap footer .top_wrap .fnb a img {}
 #wrap footer .top_wrap .right_wrap {}
 /* ==========================================================footer 패밀리사이트+사이트맵 공통 */
@@ -51,19 +48,14 @@
     font-size: 0.75rem;
     letter-spacing: -0.02rem;
     border: 1px solid #eee;
-    padding: 7px 10px;
 }
 /* ==========================================================footer 패밀리사이트+사이트맵 개별 */
 #wrap footer .top_wrap .right_wrap select {}
 #wrap footer .top_wrap .right_wrap select option {}
-#wrap footer .top_wrap .right_wrap .site_map {
-    padding: 7px 10px;
-    display: inline-block;
-}
+#wrap footer .top_wrap .right_wrap .site_map {}
 #wrap footer .top_wrap .right_wrap .site_map span {
     font-size: 0.75rem;
     letter-spacing: -0.02rem;
-    padding-right: 40px
 }
 #wrap footer .top_wrap .right_wrap .site_map span img {
 }

@@ -1,0 +1,53 @@
+/* ir.css */
+#wrap main .path {
+    text-align: right;
+    background-color: #FCFCFC;
+    border-top: 1px solid #f1f1f1;
+    padding: 14px 60px 14px 0;
+}
+#wrap main .path * {
+    font-size: 0.75rem;
+    letter-spacing: -0.02rem;
+}
+#wrap main .path a:first-child {
+    text-transform: capitalize;
+}
+#wrap main .path a:nth-child(2) {
+    text-transform: uppercase;
+}
+#wrap main .path img {
+    margin: 0 8px;
+}
+#wrap main h1 {
+    border-top: 1px solid #f1f1f1;
+    margin-bottom: 20px;
+    padding-top: 80px;
+    font-size: 3.75rem;
+    font-weight: 700;
+    letter-spacing: -0.02rem;
+    text-align: center;
+}
+#wrap main >p {
+    text-align: center;
+    font-size: 1.125rem;
+    letter-spacing: -0.02rem;
+    line-height: 1.5;
+    padding-bottom: 80px
+}
+#wrap main .bg {
+    background-color: #FCFCFC;
+    padding-top: 80px;
+}
+/* 레이아웃 위치/정렬 기법 inline-block, float, flex, grid, position */
+#wrap main .bg .ir_list {
+    overflow: hidden;
+    padding: 0 80px;
+}
+#wrap main .bg .ir_list a {
+    float: left;
+    margin-right: 26.67px;
+
+}
+#wrap main .bg .ir_list a h2 {}
+#wrap main .bg .ir_list a p {}
+#wrap main .bg .ir_list a p img {}

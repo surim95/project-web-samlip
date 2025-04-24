@@ -12,7 +12,7 @@
 #wrap main .path a:first-child {
     text-transform: capitalize;
 }
-#wrap main .path a:nth-child(2) {
+#wrap main .path a:nth-child(3) {
     text-transform: uppercase;
 }
 #wrap main .path img {
@@ -36,18 +36,47 @@
 }
 #wrap main .bg {
     background-color: #FCFCFC;
-    padding-top: 80px;
+    padding: 80px 0;
 }
 /* 레이아웃 위치/정렬 기법 inline-block, float, flex, grid, position */
 #wrap main .bg .ir_list {
-    overflow: hidden;
+    width: 1280px; height: 250px;
+    /* overflow: hidden; */
+    margin: 0 auto;
     padding: 0 80px;
 }
+/* #wrap main .bg .ir_list a:nth-child(4) {
+    float:right;
+} 오른쪽 여백 확인 */
 #wrap main .bg .ir_list a {
+    background-color: #f5f5f5;
     float: left;
+    border: 1px solid #ddd;
+    width: 260px; height: 250px;
+    text-align: left;
+    padding: 40px;
     margin-right: 26.67px;
-
+    background-repeat: no-repeat;
+    background-position: 90% 95%;
 }
-#wrap main .bg .ir_list a h2 {}
-#wrap main .bg .ir_list a p {}
-#wrap main .bg .ir_list a p img {}
+#wrap main .bg .ir_list a:hover {/* a에 마우스 올렸을 때 디자인 */
+    background-color: #fff;
+    border: 1px solid #36B4E5;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+#wrap main .bg .ir_list a:nth-child(1) {background-image:url(../images/ir/icon_ir01.png);}
+#wrap main .bg .ir_list a:nth-child(2) {background-image:url(../images/ir/icon_ir02.png);}
+#wrap main .bg .ir_list a:nth-child(3) {background-image:url(../images/ir/icon_ir03.png);}
+#wrap main .bg .ir_list a:last-child {margin-right: 0px; background-image: url(../images/ir/icon_ir04.png);}
+#wrap main .bg .ir_list a h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: -0.02rem;
+    line-height: 1.2;
+    margin-bottom: 6px;
+}
+#wrap main .bg .ir_list a p {
+    font-size: 0.875rem;
+    letter-spacing: -0.02rem ;
+    line-height: 1.4;
+}

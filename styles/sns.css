@@ -1,0 +1,66 @@
+#wrap {}
+#wrap main {
+    text-align: center;
+}
+/* ======================경로 */
+#wrap main #path {
+    font-size: 0.75rem;
+    letter-spacing: 0rem;
+    text-align: right;
+    text-transform: capitalize;
+    padding: 14px 60px 14px 0;
+    background-color: #fcfcfc;
+    border-top: 1px solid #f1f1f1;
+}
+#wrap main #path .path {}
+#wrap main #path img {
+    padding: 0 8px;
+}
+#wrap main #path span {}
+/* ======================제목, 제목 내용 */
+#wrap main .sns {
+    padding: 80px 0;
+    border-top: 1px solid #f1f1f1;
+}
+#wrap main .sns h1 {
+    font-size: 3.75rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+#wrap main .sns p {
+    font-size: 1.125rem;
+    line-height: 1.5;
+}
+/* ======================소셜네트워크 */
+#wrap main .bg {
+    background-color: #FCFCFC;
+    padding: 80px 0;
+    display: flex; flex-flow:row nowrap;
+    justify-content: center;
+}
+#wrap main .bg .sns_wrap {
+    width: 1280px;
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between;
+}
+#wrap main .bg .sns_wrap a {
+    background-color: #F5F5F5;
+    width: 406px;
+    padding: 60px 0;
+    border: 1px solid #ddd;
+}
+#wrap main .bg .sns_wrap a .img {}
+#wrap main .bg .sns_wrap a h2{
+    margin: 30px 0;
+    font-size: 1.875rem;
+    font-weight: 700;
+    text-transform:capitalize;
+}
+#wrap main .bg .sns_wrap a p:last-child{
+    color: #949494;
+}
+/* ======================소셜네트워크 선택 */
+#wrap main .bg .sns_wrap a:hover {
+    border: 1px solid #36B4E5;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}

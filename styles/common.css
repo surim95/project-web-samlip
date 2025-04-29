@@ -1,74 +1,133 @@
 /* index, 모든 sub 적용할 공통 header, footer common.css */
 /* index.html stylesheet */
 #wrap {}
-#wrap header {}
+#wrap header {
+    height: 92px;
+    padding: 0 60px;
+    /* container (header) item (h1, nav, right_wrap) */
+    display: flex;
+    flex-flow: row nowrap; /* 기본값 작성 */
+    justify-content: space-between;
+    align-items: center;
+}
 #wrap header h1 {}
 #wrap header h1 a {}
 #wrap header h1 a img {}
-#wrap header nav {}
-#wrap header nav .gnb {}
-#wrap header nav .gnb li {}
+#wrap header nav {
+}
+#wrap header nav .gnb {
+    /* container(.gnb) item(li) */
+    display: flex; flex-flow: row nowrap;
+}
+#wrap header nav .gnb li {
+    margin-right: 60px;
+}
+#wrap header nav .gnb li:last-child {
+    margin-right: 0;
+}
 #wrap header nav .gnb li a {
     font-size: 1.125rem ;
     font-weight: 600;
-    letter-spacing: -0.02rem;
+    display: block;
+    height: 92px;
+    line-height: 92px;
     /*  text-align: left;
     line-height: 1;
     color: #000;
     font-family: 'pretendard', sans-serif;
     */
 }
-#wrap header .right_wrap {}
-#wrap header .right_wrap li {}
-#wrap header .right_wrap li a {
-    font-size: 0.75rem;
+#wrap header .right_wrap {
+    display: flex; flex-flow: row nowrap;
 }
+/* 포토샵, 피그마에서 디자인한 구분선 디자인은 CSS에서 가상선택자 after 또는 before를 이용하며, 면으로 변경하여 디자인한다. */
+#wrap header .right_wrap li {margin-left: 30px;}
+#wrap header .right_wrap li:first-child {
+    margin-left: 0; display: flex; flex-flow: row nowrap;
+    align-items: center;
+}
+#wrap header .right_wrap li:first-child::after {
+    content: ''; display:inline-block;
+    width: 1px; height: 20px;
+    background-color: #000;
+    margin-left: 30px;
+}
+#wrap header .right_wrap li:first-child a {line-height: 24px;}
+#wrap header .right_wrap li a {font-size: 0.75rem; }
 #wrap header .right_wrap li a img {}
 /* ===========================================================footer */
-#wrap footer {}
-#wrap footer .top_wrap {}
-#wrap footer .top_wrap .fnb {}
+#wrap .footer_full_w {
+    width: 100%;
+    padding: 50px 60px;
+}
+#wrap footer {
+    width: 1280px; margin: 0 auto;
+    padding: 50px 0;
+}
+#wrap footer .top_wrap {
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+#wrap footer .top_wrap .fnb {
+    display: flex; flex-flow: row nowrap;
+    align-items: center;
+}
 #wrap footer .top_wrap .fnb a {
-    letter-spacing: -0.02rem;
+    margin-left: 60px;
 }
 #wrap footer .top_wrap .fnb a:first-child {
     color: #138FBF;
     font-weight: 600;
-    letter-spacing: -0.02rem;
+    margin-left: 0;
 }
 #wrap footer .top_wrap .fnb a:nth-child(2) {
     color: #DA2128;
     font-weight: 600;
-    letter-spacing: -0.02rem;
 }
-#wrap footer .top_wrap .fnb a:last-child {}
+#wrap footer .top_wrap .fnb a:last-child {
+    margin-left: 46px;
+}
 #wrap footer .top_wrap .fnb a img {}
-#wrap footer .top_wrap .right_wrap {}
+#wrap footer .top_wrap .right_wrap {
+    display: flex; flex-flow: row nowrap;
+    align-items: center;
+}
 /* ==========================================================footer 패밀리사이트+사이트맵 공통 */
 #wrap footer .top_wrap .right_wrap .site {
     font-size: 0.75rem;
-    letter-spacing: -0.02rem;
     border: 1px solid #eee;
+    padding: 7px 10px; height: 38px;
 }
 /* ==========================================================footer 패밀리사이트+사이트맵 개별 */
-#wrap footer .top_wrap .right_wrap select {}
+#wrap footer .top_wrap .right_wrap select {
+    width: 197px; outline: none;
+    background: #fff url(../images/icon_down-arrow.png) no-repeat 94% center; 
+}
 #wrap footer .top_wrap .right_wrap select option {}
-#wrap footer .top_wrap .right_wrap .site_map {}
+#wrap footer .top_wrap .right_wrap .site_map {
+    background: #fff;
+    width: 135px;
+    margin-left: 20px;
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
 #wrap footer .top_wrap .right_wrap .site_map span {
     font-size: 0.75rem;
-    letter-spacing: -0.02rem;
 }
-#wrap footer .top_wrap .right_wrap .site_map span img {
+#wrap footer .top_wrap .right_wrap .site_map img {
 }
-#wrap footer .bottom_wrap {}
+#wrap footer .bottom_wrap {
+
+}
 #wrap footer .bottom_wrap * {
     color: #808080;
     font-size: 0.875rem;
     line-height: 1.5;
-    letter-spacing: -0.02rem;
 }
 #wrap footer .bottom_wrap address {
-    
+    margin-bottom: 50px;
 }
 #wrap footer .bottom_wrap address em {
     font-weight: 600;

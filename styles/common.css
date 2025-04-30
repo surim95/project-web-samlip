@@ -86,42 +86,68 @@
 #wrap header nav .gnb >li .lnb_bg .lnb_depth1 >li .lnb_depth2 li a {}
 /* ======================================== brands lnb */
 #wrap header nav .gnb >li .lnb_bg .lnb_dep1_brands {
-    background-color: blueviolet;
-    margin-right: 50px;
+    background-color: aqua;
+    width: max-content;
+    margin: 0 auto;
+    display: flex; flex-flow: row nowrap;
+    text-align: center;
 }
-#wrap header nav .gnb >li .lnb_bg .lnb_dep1_brands >li {}
+#wrap header nav .gnb >li .lnb_bg .lnb_dep1_brands >li {
+    background-color: orange;
+    margin-right: 40px;
+}
+/* ===================================================마지막 쓸모없는 여백 지우기 */
+#wrap header nav .gnb >li .lnb_bg .lnb_dep1_brands >li:last-child {
+    margin-right: 0;
+}
+/* =================================================== h2폰트 */
 #wrap header nav .gnb >li .lnb_bg .lnb_dep1_brands >li h2 {
     margin-bottom: 20px;
+    font-size: 1.125rem;
+    font-weight: 600;
+    background-color: yellowgreen;
 }
-#wrap header nav .gnb >li .lnb_bg .lnb_dep1_brands >li h2 a {}
+#wrap header nav .gnb >li .lnb_bg .lnb_dep1_brands >li h2 a {
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+/* ================================================== lnb dep2 수평, 행바꿈 */
 #wrap header nav .gnb >li .lnb_bg .lnb_dep1_brands >li .lnb_dep2_brands {
-/*     background-color: orange;
+    background-color: red;
     width: 326px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between; */
-}
-#wrap header nav .gnb >li .lnb_bg .lnb_dep1_brands >li:nth-child(1) .lnb_dep2_brands  {
-/*     width: 0;
-    display: block; */
-}
-#wrap header nav .gnb >li .lnb_bg .lnb_dep1_brands >li:nth-child(1) .lnb_dep2_brands li {
-/*     background-color: aqua;
-    width: 258px;
-    display: flex; flex-flow: column nowrap; */
-}
-#wrap header nav .gnb >li .lnb_bg .lnb_dep1_brands >li:nth-child(1) .lnb_dep2_brands li a:first-child {
-/*     width: 258px; height: 148px; */
-    
+    display: flex; flex-flow: row wrap;
+    justify-content: space-between;
 }
 #wrap header nav .gnb >li .lnb_bg .lnb_dep1_brands >li .lnb_dep2_brands li {
-/*     width: 158px;
-    background-color: #fff;
-    margin-bottom: 10px; */
+    margin-top: 10px;
+    padding: 9px 19px;
+    background-color: lightgray;
 }
+/* ================================================= dep1 li 위 쓸모없는 여백 지우기 */
+#wrap header nav .gnb >li .lnb_bg .lnb_dep1_brands >li .lnb_dep2_brands li:first-child {
+    margin-top: 0;
+}
+#wrap header nav .gnb >li .lnb_bg .lnb_dep1_brands >li .lnb_dep2_brands li:nth-child(2) {
+    margin-top: 0;
+}
+/* ================================================= */
 #wrap header nav .gnb >li .lnb_bg .lnb_dep1_brands >li .lnb_dep2_brands li a {}
 #wrap header nav .gnb >li .lnb_bg .lnb_dep1_brands >li .lnb_dep2_brands li a img {}
-#wrap header nav .gnb >li .lnb_bg .lnb_dep1_brands >li .lnb_dep2_brands li a span {}
+/* ================================================= 혼자 여백, 사이즈 다른 거 설정 */
+#wrap header nav .gnb >li .lnb_bg .lnb_dep1_brands >li:first-child {margin-right: 50px;}
+#wrap header nav .gnb >li .lnb_bg .lnb_dep1_brands >li:first-child .lnb_dep2_brands {
+    width: 258px;
+    display: flex; flex-flow: column nowrap;
+}
+/* ================================================= 이미지 사이즈 설정 */
+#wrap header nav .gnb >li .lnb_bg .lnb_dep1_brands >li:first-child .lnb_dep2_brands li:first-child {
+    background-color: #ddd;
+    width: 100%; padding: 24px 0;
+    margin-bottom: 20px;
+}
+#wrap header nav .gnb >li .lnb_bg .lnb_dep1_brands >li:first-child .lnb_dep2_brands li a {
+    font-weight: 600;
+}
 /* =======================================우측 보조메뉴 */
 #wrap header .right_wrap {
     display: flex; flex-flow: row nowrap;

@@ -64,10 +64,10 @@
     display: flex; flex-flow: row nowrap;
     text-align: center;
 }
-#wrap header nav .gnb >li .lnb_bg .lnb_depth1 >li:last-child {margin-right: 0px;}
 #wrap header nav .gnb >li .lnb_bg .lnb_depth1 >li {
     margin-right: 100px;
 } /* lnb_depth1 자식 li만 선택 (자손제외) */
+#wrap header nav .gnb >li .lnb_bg .lnb_depth1 >li:last-child {margin-right: 0px;}
 #wrap header nav .gnb >li .lnb_bg .lnb_depth1 >li >a {
     font-size: 1.063rem;
     font-weight: 600;
@@ -85,6 +85,11 @@
 /* ======================================== brands lnb */
 #wrap header nav .gnb >li #lnb_brands {}
 #wrap header nav .gnb >li #lnb_brands .lnb_depth1 {}
+#wrap header nav .gnb >li #lnb_brands .lnb_depth1 >li {
+    margin-right: 40px;
+}
+#wrap header nav .gnb >li #lnb_brands .lnb_depth1 >li:first-child {margin-right: 50px;}
+#wrap header nav .gnb >li #lnb_brands .lnb_depth1 >li:last-child {margin-right: 0;}
 #wrap header nav .gnb >li #lnb_brands .lnb_depth1 >li >a {}
 #wrap header nav .gnb >li #lnb_brands .lnb_depth1 >li h2 {
     margin-bottom: 20px;

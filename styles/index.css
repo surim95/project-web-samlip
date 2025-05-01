@@ -1,1 +1,141 @@
 /* index.css 메인 첫 페이지의 <main> */
+main {}
+/* 1. 광고배너 ==================================================================================== */
+main .ad_wrap {} /* 슬라이드+버튼 그룹 */
+main .ad_wrap .ad_container {} /* 슬라이드 그룹 */
+main .ad_wrap .ad_container .ad {
+    display: none;
+    height: 800px;
+    background-position: center;
+    position: relative;
+} /* 슬라이드 */
+main .ad_wrap .ad_container .ad .ad_text {
+    width: 1280px; /* margin: 0 auto; */
+    position: absolute; bottom: 71px; left: 50%;
+    transform: translateX(-50%); /* position:absolute 보조 속성으로 많이 사용, left 50%는 왼쪽상단 기준이라 50%부터 요소가 시작하게 됨. 따라서 요소의 중간으로 기준을 잡기 위해 사용*/
+    /* 요소가 absolute가 아니라면 margin: 0 auto; */
+}
+main .ad_wrap .ad_container .ad .ad_text h2 {
+    font-size: 3.75rem;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+main .ad_wrap .ad_container .ad .ad_text p {
+    font-weight: 500;
+    line-height: 1.5;
+}
+main .ad_wrap .ad_btn {
+    text-align: center;
+    padding: 34px 0;
+
+}
+main .ad_wrap .ad_btn #ad_prev {
+    margin-right: 10px;
+    transform: scaleX(-1);
+}
+main .ad_wrap .ad_btn #ad_prev img {}
+main .ad_wrap .ad_btn #ad_next {}
+main .ad_wrap .ad_btn #ad_next img {}
+/* 광고개별영역 */
+main .ad_wrap .ad_container .ad1 {
+    display: block;
+    background-image: url(../images/add_01.jpg);
+
+}
+main .ad_wrap .ad_container .ad2 {}
+main .ad_wrap .ad_container .ad3 {}
+main .ad_wrap .ad_container .ad4 {}
+main .ad_wrap .ad_container .ad5 {}
+/* 2. 뉴스&공지사항 ======================================================== */
+main .news_all {
+    text-align: center;
+}
+main .news_all h2 {
+    font-size: 3.75rem;
+    font-weight: 700;
+}
+main .news_all >p {
+    margin: 20px 0;
+}
+main .news_all .news_wrap {
+    width: 1370px; overflow: hidden;
+    margin: 0 auto;
+}
+main .news_all .news_wrap .news_container {
+    width: max-content;
+    display: flex; flex-flow: row nowrap;
+}
+main .news_all .news_wrap .news_container .news {
+    border: 1px solid #bbb;
+    width: 311px; margin-right: 42px; height: 298px;
+    text-align: left;
+    overflow: hidden;
+    position: relative;
+}
+/* 마우스 */
+main .news_all .news_wrap .news_container .news:hover {
+    border: 1px solid #55ccff;
+}
+main .news_all .news_wrap .news_container .news:last-child {
+    margin-right: 0;
+}
+main .news_all .news_wrap .news_container .news a {}
+main .news_all .news_wrap .news_container .news a h3 {
+    margin-left: 20px;
+    line-height: 1.3;
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+main .news_all .news_wrap .news_container .news a p {
+    margin-bottom: 18px;
+}
+main .news_all .news_wrap .news_container .news a p img {}
+main .news_all .news_wrap .news_container .news .date {
+    position: absolute; left: 20px; bottom: 20px;
+}
+main .news_all .news_wrap .news_btn {
+    padding: 20px 0;
+}
+main .news_all .news_wrap .news_btn #ad_prev {
+    margin-right: 10px;
+    transform: scaleX(-1);
+}
+main .news_all .news_wrap .news_btn #ad_prev img {}
+main .news_all .news_wrap .news_btn #ad_next {}
+main .news_all .news_wrap .news_btn #ad_next img {}
+main .news_all .all_news:hover img {}
+main .news_all .all_news {
+    width: max-content;
+    border: 1px solid #bbb;
+    padding: 10px 30px;
+    display: flex; flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; left: 50%; transform: translateX(-50%); */
+    margin: 0 auto;
+}
+main .news_all .all_news img {}
+main .news_all .all_news em {
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin-left: 12px;
+}
+/* all_news 버튼 hover 효과 */
+main .news_all .all_news:hover {
+    background-color: #000;
+}
+main .news_all .all_news:hover img {
+    filter: invert();
+}
+main .news_all .all_news:hover em {
+    color: #fff;
+}
+/* 개별뉴스영역 */
+main .news_all .news_wrap .news_container .news1 {}
+main .news_all .news_wrap .news_container .news2 {}
+main .news_all .news_wrap .news_container .news3 {}
+main .news_all .news_wrap .news_container .news4 {}
+main .news_all .news_wrap .news_container .news5 {}
+main .news_all .news_wrap .news_container .news6 {}
+main .news_all .news_wrap .news_container .news7 {}
+main .news_all .news_wrap .news_container .news8 {}

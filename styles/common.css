@@ -2,14 +2,16 @@
 /* index.html stylesheet */
 #wrap {}
 #wrap header {
-    height: 92px;
+    height: 92px; width: 100%;
     padding: 0 60px;
     /* container (header) item (h1, nav, right_wrap) */
     display: flex;
     flex-flow: row nowrap; /* 기본값 작성 */
     justify-content: space-between;
     align-items: center;
-    position: relative; /* lnb_bg의 부모 위치 기준 설정 */
+    position: fixed; /* lnb_bg의 부모 위치 기준 설정 */
+    z-index: 900; /* -1~0~999 단위 없고 중첩순서만 결정하는 position 선택속성 */
+    background-color: #fff;
 }
 #wrap header h1 {}
 #wrap header h1 a {}

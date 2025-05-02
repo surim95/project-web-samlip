@@ -12,6 +12,15 @@
     <link href="./styles/index.css" rel="stylesheet">
 </head>
 <body>
+    <!-- 우측 pagenation 고정영역 -->
+    <div class="right_nav">
+        <a href="#ad_wrap"><em>Main</em><span></span></a>
+        <a href="#news_all"><em>News & Notice</em><span></span></a>
+        <a href="#studio_wrap"><em>Now @ Samlip</em><span></span></a>
+        <a href="#brands_all"><em>Our Brands</em><span></span></a>
+        <a href="#footer"><em>Company Info</em><span></span></a>
+    </div>
+    <!-- 삼립 메인페이지 시작 영역 -->
     <div id="wrap">
         <header><!-- 의미, 기능, 표시 --> <!-- h1, alt -->
             <h1><a href="./index.html"><img src="./images/logo.png" alt="SPC삼립로고"></a></h1>
@@ -148,7 +157,7 @@
         </header>
         <main>
             <!-- 1. 광고배너 -->
-            <section class="ad_wrap">
+            <section class="ad_wrap" id="ad_wrap">
                 <!-- 1.1 광고 개별 그룹 -->
                 <div class="ad_container">
                     <div class="ad ad1">
@@ -189,7 +198,7 @@
                 </div>
             </section>
             <!-- 2. 뉴스&공지사항 -->
-            <section class="news_all">
+            <section class="news_all" id="news_all">
                 <h2>News & Notice</h2>
                 <p>SPC Samlip news updates, from a company that is always Happy.</p>
                 <section class="news_wrap">
@@ -203,7 +212,7 @@
                         </div>
                         <div class="news news2">
                             <a href="#">
-                                <p><img src="./images/news_02.jpg" alt=""></p>
+                                <p><img src="./images/news_02.png" alt=""></p>
                                 <h3>삼립, 바로 굽는 '레디비' 삼성<br>비스포크 큐커 협업...</h3>
                             </a>
                             <p class="date">2025년 04월 24일</p>
@@ -250,11 +259,10 @@
                             </a>
                             <p class="date">2025년 04월 30일</p>
                         </div>
-                        
                     </section>
                     <div class="news_btn">
-                        <button type="button" id="ad_prev"><img src="./images/ad_arrow.png" alt="이전 공지사항 보기"></button>
-                        <button type="button" id="ad_next"><img src="./images/ad_arrow.png" alt="다음 공지사항 보기"></button>
+                        <button type="button" id="news_prev"><img src="./images/ad_arrow.png" alt="이전 공지사항 보기"></button>
+                        <button type="button" id="news_next"><img src="./images/ad_arrow.png" alt="다음 공지사항 보기"></button>
                     </div>
                 </section>
                 <a href="#" class="all_news">
@@ -263,9 +271,277 @@
                 </a>
             </section>
             <!-- 3. 삼립 스튜디오 -->
+            <section class="studio_wrap" id="studio_wrap">
+                <h2>Now @ Samlip Studio</h2>
+                <p>Samlip Studio, SPC Samlip’s YouTube channel where you can eat, watch, and digest.</p>
+                <!-- 유튜브 채널 미리보기 -->
+                <div class="studio_list">
+                    <a href="#"><img src="./images/youtube_01.jpg" alt="삼립호빵 광고"></a>
+                    <a href="#"><img src="./images/youtube_02.jpg" alt="citydeli 육즙가득 한입 스테이크"></a>
+                    <a href="#"><img src="./images/youtube_03.jpg" alt="citydeli 광고"></a>
+                    <a href="#"><img src="./images/youtube_04.jpg" alt="citydeli 한입 스테이크 광고"></a>
+                    <a href="#"><img src="./images/youtube_05.jpg" alt="삼립 LOG 세일즈 마케터의 하루"></a>
+                    <a href="#"><img src="./images/youtube_06.jpg" alt="동수수퍼 몰아보기 파트2"></a>
+                    <a href="#"><img src="./images/youtube_07.jpg" alt="동수수퍼 몰아보기 파트1"></a>
+                    <a href="#"><img src="./images/youtube_08.jpg" alt="오븐없이 1분만에 오레오 케이크 만드는 법 할머니 점례쓰 더빙"></a>
+                </div>
+                <!-- 위 미리보기 클릭시 열리는 영역 -->
+                <div class="studio_open">
+                    <div class="open_container">
+                        <button type="button" class="close" title="close(ESC)">X</button>
+                        <div class="youtube">
+                            <iframe width="900" height="506" src="https://www.youtube.com/embed/ak643LmueKE" title="[삼립호빵] 올겨울 삼립호빵은 신.뉴.빈.만 기억해!🐤" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe width="900" height="506" src="https://www.youtube.com/embed/L1PWvUCGkDM" title="[시티델리] 시티델리로 함 박꿔보시죠!✨ 아주 간편해도 가장 고기다운 #시티델리 육즙가득 함박스테이크 (5초)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe width="900" height="506" src="https://www.youtube.com/embed/uLd2Y3V2V6o" title="[시티델리] 시티델리로 함 박꿔보시죠!✨ 아주 간편해도 가장 고기다운 #시티델리 육즙가득 함박스테이크 (15초)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe width="900" height="506" src="https://www.youtube.com/embed/jvVNTgcjyu0" title="[시티델리] 시티델리로 함 박꿔보시죠! ✨ 아주 간편해도 가장 고기다운 #시티델리 육즙가득 함박스테이크(30초)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe width="900" height="506" src="https://www.youtube.com/embed/KzxvoWVdLMA" title="[삼립LOG]삼립 빵순이의 하루🍞 세일즈마케터(영업) 하루업무 보기🔍" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe width="900" height="506" src="https://www.youtube.com/embed/B1Pm8DjZa24" title="분명히 남자였는데 여자친구가 됐다 [동수수퍼] 몰아보기 part.2 | 웹드라마" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe width="900" height="506" src="https://www.youtube.com/embed/xpRBBnrjhS0" title="비주얼 맛집 감성충만 동네슈퍼 [동수수퍼] 몰아보기 part.1 | 웹드라마" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe width="900" height="506" src="https://www.youtube.com/embed/y58cZqwd0Bo" title="정통 크림빵 x 오레오 조합 미쳤누.. 편의점에서 직접 만들어보세요" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <!-- (아래) 고정링크 -->
+                <a href="#" class="youtube_link">
+                    <img src="./images/icon_youtube.png" alt="삼립 유튜브 바로가기">
+                    <em>View On YouTube</em>
+                </a>
+            </section>
             <!-- 4. 브랜드 -->
+            <section class="brands_all" id="brands_all">
+                <h2>Our Brands</h2>
+                <p>Introduction of SPC Samlip brands that are loved all throughout different business fields.</p>
+                <div class="brands_wrap"> <!-- 1. 슬라이드가 실제 보이는 영역 -->
+                    <div class="brands_container"> <!-- 2. 슬라이드 전체묶는 가로영역(실제 움직이는 부분) --> 
+                        <ul class="brands_slide1 brands_slide"> <!-- 3. 첫번째 화면에 보이는 12개 로고 부모 -->
+                            <li>
+                                <p class="logo"><img src="./images/brands_01.png" alt="프로젝트h"></p>
+                                <!-- (아래)li 마우스 hover 시 보이는 영역 -->
+                                <div class="brands_para">
+                                    <h3>프로젝트H</h3>
+                                    <p>하이면 신제품 대공개 제품 개발과정 스토리 류수영이 직접 개발한 하이면 신제품 구매하러 가기</p>
+                                    <a href="#">View Details</a>
+                                </div>
+                            </li>
+                            <li>
+                                <p class="logo"><img src="./images/brands_01.png" alt="프로젝트h"></p>
+                                <!-- (아래)li 마우스 hover 시 보이는 영역 -->
+                                <div class="brands_para">
+                                    <h3>프로젝트H</h3>
+                                    <p>하이면 신제품 대공개 제품 개발과정 스토리 류수영이 직접 개발한 하이면 신제품 구매하러 가기</p>
+                                    <a href="#">View Details</a>
+                                </div>
+                            </li>
+                            <li>
+                                <p class="logo"><img src="./images/brands_01.png" alt="프로젝트h"></p>
+                                <!-- (아래)li 마우스 hover 시 보이는 영역 -->
+                                <div class="brands_para">
+                                    <h3>프로젝트H</h3>
+                                    <p>하이면 신제품 대공개 제품 개발과정 스토리 류수영이 직접 개발한 하이면 신제품 구매하러 가기</p>
+                                    <a href="#">View Details</a>
+                                </div>
+                            </li>
+                            <li>
+                                <p class="logo"><img src="./images/brands_01.png" alt="프로젝트h"></p>
+                                <!-- (아래)li 마우스 hover 시 보이는 영역 -->
+                                <div class="brands_para">
+                                    <h3>프로젝트H</h3>
+                                    <p>하이면 신제품 대공개 제품 개발과정 스토리 류수영이 직접 개발한 하이면 신제품 구매하러 가기</p>
+                                    <a href="#">View Details</a>
+                                </div>
+                            </li>
+                            <li>
+                                <p class="logo"><img src="./images/brands_01.png" alt="프로젝트h"></p>
+                                <!-- (아래)li 마우스 hover 시 보이는 영역 -->
+                                <div class="brands_para">
+                                    <h3>프로젝트H</h3>
+                                    <p>하이면 신제품 대공개 제품 개발과정 스토리 류수영이 직접 개발한 하이면 신제품 구매하러 가기</p>
+                                    <a href="#">View Details</a>
+                                </div>
+                            </li>
+                            <li>
+                                <p class="logo"><img src="./images/brands_01.png" alt="프로젝트h"></p>
+                                <!-- (아래)li 마우스 hover 시 보이는 영역 -->
+                                <div class="brands_para">
+                                    <h3>프로젝트H</h3>
+                                    <p>하이면 신제품 대공개 제품 개발과정 스토리 류수영이 직접 개발한 하이면 신제품 구매하러 가기</p>
+                                    <a href="#">View Details</a>
+                                </div>
+                            </li>
+                            <li>
+                                <p class="logo"><img src="./images/brands_01.png" alt="프로젝트h"></p>
+                                <!-- (아래)li 마우스 hover 시 보이는 영역 -->
+                                <div class="brands_para">
+                                    <h3>프로젝트H</h3>
+                                    <p>하이면 신제품 대공개 제품 개발과정 스토리 류수영이 직접 개발한 하이면 신제품 구매하러 가기</p>
+                                    <a href="#">View Details</a>
+                                </div>
+                            </li>
+                            <li>
+                                <p class="logo"><img src="./images/brands_01.png" alt="프로젝트h"></p>
+                                <!-- (아래)li 마우스 hover 시 보이는 영역 -->
+                                <div class="brands_para">
+                                    <h3>프로젝트H</h3>
+                                    <p>하이면 신제품 대공개 제품 개발과정 스토리 류수영이 직접 개발한 하이면 신제품 구매하러 가기</p>
+                                    <a href="#">View Details</a>
+                                </div>
+                            </li>
+                            <li>
+                                <p class="logo"><img src="./images/brands_01.png" alt="프로젝트h"></p>
+                                <!-- (아래)li 마우스 hover 시 보이는 영역 -->
+                                <div class="brands_para">
+                                    <h3>프로젝트H</h3>
+                                    <p>하이면 신제품 대공개 제품 개발과정 스토리 류수영이 직접 개발한 하이면 신제품 구매하러 가기</p>
+                                    <a href="#">View Details</a>
+                                </div>
+                            </li>
+                            <li>
+                                <p class="logo"><img src="./images/brands_01.png" alt="프로젝트h"></p>
+                                <!-- (아래)li 마우스 hover 시 보이는 영역 -->
+                                <div class="brands_para">
+                                    <h3>프로젝트H</h3>
+                                    <p>하이면 신제품 대공개 제품 개발과정 스토리 류수영이 직접 개발한 하이면 신제품 구매하러 가기</p>
+                                    <a href="#">View Details</a>
+                                </div>
+                            </li>
+                            <li>
+                                <p class="logo"><img src="./images/brands_01.png" alt="프로젝트h"></p>
+                                <!-- (아래)li 마우스 hover 시 보이는 영역 -->
+                                <div class="brands_para">
+                                    <h3>프로젝트H</h3>
+                                    <p>하이면 신제품 대공개 제품 개발과정 스토리 류수영이 직접 개발한 하이면 신제품 구매하러 가기</p>
+                                    <a href="#">View Details</a>
+                                </div>
+                            </li>
+                            <li>
+                                <p class="logo"><img src="./images/brands_01.png" alt="프로젝트h"></p>
+                                <!-- (아래)li 마우스 hover 시 보이는 영역 -->
+                                <div class="brands_para">
+                                    <h3>프로젝트H</h3>
+                                    <p>하이면 신제품 대공개 제품 개발과정 스토리 류수영이 직접 개발한 하이면 신제품 구매하러 가기</p>
+                                    <a href="#">View Details</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="brands_slide2 brands_slide"> <!-- 3. 첫번째 화면에 보이는 12개 로고 부모 -->
+                            <li>
+                                <p class="logo"><img src="./images/brands_02.png" alt="하이면"></p>
+                                <!-- (아래)li 마우스 hover 시 보이는 영역 -->
+                                <div class="brands_para">
+                                    <h3>하이면</h3>
+                                    <p>하이면 신제품 대공개 제품 개발과정 스토리 류수영이 직접 개발한 하이면 신제품 구매하러 가기</p>
+                                    <a href="#">View Details</a>
+                                </div>
+                            </li>
+                            <li>
+                                <p class="logo"><img src="./images/brands_02.png" alt="하이면"></p>
+                                <!-- (아래)li 마우스 hover 시 보이는 영역 -->
+                                <div class="brands_para">
+                                    <h3>하이면</h3>
+                                    <p>하이면 신제품 대공개 제품 개발과정 스토리 류수영이 직접 개발한 하이면 신제품 구매하러 가기</p>
+                                    <a href="#">View Details</a>
+                                </div>
+                            </li>
+                            <li>
+                                <p class="logo"><img src="./images/brands_02.png" alt="하이면"></p>
+                                <!-- (아래)li 마우스 hover 시 보이는 영역 -->
+                                <div class="brands_para">
+                                    <h3>하이면</h3>
+                                    <p>하이면 신제품 대공개 제품 개발과정 스토리 류수영이 직접 개발한 하이면 신제품 구매하러 가기</p>
+                                    <a href="#">View Details</a>
+                                </div>
+                            </li>
+                            <li>
+                                <p class="logo"><img src="./images/brands_02.png" alt="하이면"></p>
+                                <!-- (아래)li 마우스 hover 시 보이는 영역 -->
+                                <div class="brands_para">
+                                    <h3>하이면</h3>
+                                    <p>하이면 신제품 대공개 제품 개발과정 스토리 류수영이 직접 개발한 하이면 신제품 구매하러 가기</p>
+                                    <a href="#">View Details</a>
+                                </div>
+                            </li>
+                            <li>
+                                <p class="logo"><img src="./images/brands_02.png" alt="하이면"></p>
+                                <!-- (아래)li 마우스 hover 시 보이는 영역 -->
+                                <div class="brands_para">
+                                    <h3>하이면</h3>
+                                    <p>하이면 신제품 대공개 제품 개발과정 스토리 류수영이 직접 개발한 하이면 신제품 구매하러 가기</p>
+                                    <a href="#">View Details</a>
+                                </div>
+                            </li>
+                            <li>
+                                <p class="logo"><img src="./images/brands_02.png" alt="하이면"></p>
+                                <!-- (아래)li 마우스 hover 시 보이는 영역 -->
+                                <div class="brands_para">
+                                    <h3>하이면</h3>
+                                    <p>하이면 신제품 대공개 제품 개발과정 스토리 류수영이 직접 개발한 하이면 신제품 구매하러 가기</p>
+                                    <a href="#">View Details</a>
+                                </div>
+                            </li>
+                            <li>
+                                <p class="logo"><img src="./images/brands_02.png" alt="하이면"></p>
+                                <!-- (아래)li 마우스 hover 시 보이는 영역 -->
+                                <div class="brands_para">
+                                    <h3>하이면</h3>
+                                    <p>하이면 신제품 대공개 제품 개발과정 스토리 류수영이 직접 개발한 하이면 신제품 구매하러 가기</p>
+                                    <a href="#">View Details</a>
+                                </div>
+                            </li>
+                            <li>
+                                <p class="logo"><img src="./images/brands_02.png" alt="하이면"></p>
+                                <!-- (아래)li 마우스 hover 시 보이는 영역 -->
+                                <div class="brands_para">
+                                    <h3>하이면</h3>
+                                    <p>하이면 신제품 대공개 제품 개발과정 스토리 류수영이 직접 개발한 하이면 신제품 구매하러 가기</p>
+                                    <a href="#">View Details</a>
+                                </div>
+                            </li>
+                            <li>
+                                <p class="logo"><img src="./images/brands_02.png" alt="하이면"></p>
+                                <!-- (아래)li 마우스 hover 시 보이는 영역 -->
+                                <div class="brands_para">
+                                    <h3>하이면</h3>
+                                    <p>하이면 신제품 대공개 제품 개발과정 스토리 류수영이 직접 개발한 하이면 신제품 구매하러 가기</p>
+                                    <a href="#">View Details</a>
+                                </div>
+                            </li>
+                            <li>
+                                <p class="logo"><img src="./images/brands_02.png" alt="하이면"></p>
+                                <!-- (아래)li 마우스 hover 시 보이는 영역 -->
+                                <div class="brands_para">
+                                    <h3>하이면</h3>
+                                    <p>하이면 신제품 대공개 제품 개발과정 스토리 류수영이 직접 개발한 하이면 신제품 구매하러 가기</p>
+                                    <a href="#">View Details</a>
+                                </div>
+                            </li>
+                            <li>
+                                <p class="logo"><img src="./images/brands_02.png" alt="하이면"></p>
+                                <!-- (아래)li 마우스 hover 시 보이는 영역 -->
+                                <div class="brands_para">
+                                    <h3>하이면</h3>
+                                    <p>하이면 신제품 대공개 제품 개발과정 스토리 류수영이 직접 개발한 하이면 신제품 구매하러 가기</p>
+                                    <a href="#">View Details</a>
+                                </div>
+                            </li>
+                            <li>
+                                <p class="logo"><img src="./images/brands_02.png" alt="하이면"></p>
+                                <!-- (아래)li 마우스 hover 시 보이는 영역 -->
+                                <div class="brands_para">
+                                    <h3>하이면</h3>
+                                    <p>하이면 신제품 대공개 제품 개발과정 스토리 류수영이 직접 개발한 하이면 신제품 구매하러 가기</p>
+                                    <a href="#">View Details</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="brands_btn">
+                        <button type="button" id="brands_prev"><img src="./images/ad_arrow.png" alt="이전 브랜드 보기"></button>
+                        <button type="button" id="brands_next"><img src="./images/ad_arrow.png" alt="다음 브랜드 보기"></button>
+                    </div>
+                </div>
+            </section>
         </main>
-        <footer>
+        <footer id="footer">
             <div class="top_wrap">
                 <div class="fnb">
                     <a href="#">개인정보처리방침</a>
